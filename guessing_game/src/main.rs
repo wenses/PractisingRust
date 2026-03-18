@@ -15,7 +15,10 @@ fn main() {
         io::stdin().read_line(&mut guess).expect("error reading line");
 
         //converting to unsinged integer 32 (small poisitive number)
-        let guess: u32=guess.trim().parse().expect("Please enter numbers");
+        let guess: u32=guess.trim().parse().{
+            Ok(num) => num,
+            Err(_) => continue,
+        };
 
         match guess.cmp(&x){
             Ordering::Less => println!("try bigger"),
