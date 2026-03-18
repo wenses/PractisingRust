@@ -6,7 +6,7 @@ fn main() {
     println!("WELCOME TO MY GUESSING GAME");
 
     let x=rand::thread_rng().gen_range(1..=100);
-    println!("THE SECRET NUMBER IS {}",x);
+    //println!("THE SECRET NUMBER IS {}",x);
 
     loop{
         let mut guess=String::new();
