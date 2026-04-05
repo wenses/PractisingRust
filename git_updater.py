@@ -1,5 +1,4 @@
 import os
-import subprocess as sbp 
 
 
 result=os.system("git status")
